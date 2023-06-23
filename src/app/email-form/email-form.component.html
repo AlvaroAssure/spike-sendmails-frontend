@@ -1,0 +1,23 @@
+<div class="email-form">
+  
+  <h2 class="form-title">Env&iacute;o de correo electronico</h2>
+
+    <div class="form-group">
+      <label for="to">Para:</label>
+      <input type="email" id="to" [(ngModel)]="to" required />
+    </div>
+
+    <div class="form-group">
+      <label for="subject">Asunto:</label>
+      <input type="text" id="subject" [(ngModel)]="subject" required />
+    </div>
+
+    <div class="form-group">
+      <label for="message">Mensaje:</label>
+      <textarea id="message" [(ngModel)]="message" required></textarea>
+    </div>
+
+    <button class="btn-send" (click)="sendEmail()">Enviar correo</button>
+
+</div>
+
